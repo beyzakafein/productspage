@@ -123,6 +123,9 @@ main {
     color: #1d4e94;
 }
 
+li a {
+    text-decoration: none;
+}
 
 .product-list li p {
     font-size: 14px;

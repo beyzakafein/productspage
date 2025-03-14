@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    background: #f4f7fc;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+
+    a {
+        text-decoration: none;
+        display: flex;
+        
+        p {
+            color: #102e5a;
+        }
+    }
+}
+
+main {
+    background: #fff;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 260px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    align-items: center;
+}
+
+.slider img {
+    width: 100%;
+    height: 260px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.slider-caption {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.title {
+    margin: 21px 0px 20px 15px;
+    font-size: 32px;
+    text-align: left;
+    width: 140px;
+    color: #102e5a;
+}
+
+.main-container {
+    margin: 0% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-list {
+    list-style: none;
+    margin-bottom: 200px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9%;
+}
+
+.product-list li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.product-list li:hover {
+    border-bottom: linear-gradient(to right, #00a0a864, #7c2ae848);
+    transform: translateY(5px);
+    border-radius: 0 8px 8px 0;
+
+    strong {
+        color: #1d66cd;
+    }
+}
+
+.product-list li strong {
+    font-size: 18px;
+    color: #1d4e94;
+}
+
+
+.product-list li p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0 0;
+    width: 290px;
+}
